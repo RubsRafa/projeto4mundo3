@@ -25,4 +25,25 @@ public class Facade implements FacadeLocal {
         // Consultar todos os produtos da tabela Produto
         return em.createNamedQuery("Produto.findAll", Produto.class).getResultList();
     }
+    
+    @Override
+    public Produto findByIdProduto(int id) {
+        return em.find(Produto.class, id);
+    }
+
+    @Override
+    public void createProduto(Produto novoProduto) {
+        em.persist(novoProduto);
+    }
+
+    @Override
+    public void editProduto(Produto produto) {
+        em.merge(produto);
+    }
+
+    @Override
+    public void removeProduto(Produto produto) {
+        Produto produtoToRemove = em.merge(produto);
+        em.remove(produtoToRemove);
+    }
 }

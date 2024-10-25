@@ -16,5 +16,13 @@ import java.util.List;
 public interface FacadeLocal {
 
     public List<Produto> findAll();
+
+    public Produto findByIdProduto(int id);
+
+    public void createProduto(Produto novoProduto);
+
+    public void editProduto(Produto produto);
+
+    public void removeProduto(Produto produto);
     
 }
