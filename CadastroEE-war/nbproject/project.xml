@@ -28,5 +28,16 @@
                 <id>dist</id>
             </reference>
         </references>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>Incluir</word>
+            <word>Inlcuir</word>
+            <word>Lista</word>
+            <word>novo</word>
+            <word>Preço</word>
+            <word>produto</word>
+            <word>Produtos</word>
+            <word>Quantidade</word>
+            <word>Venda</word>
+        </spellchecker-wordlist>
     </configuration>
 </project>

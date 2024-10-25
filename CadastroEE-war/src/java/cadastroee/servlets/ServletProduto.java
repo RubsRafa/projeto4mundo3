@@ -44,7 +44,7 @@ public class ServletProduto extends HttpServlet {
                     out.println("<p>" + produto.getNome() + " - " + produto.getPrecoVenda() + "</li>");
                 }
             } else {
-                out.println("<li>Nenhum produto encontrado.</li>");
+                out.println("<p>Nenhum produto encontrado.</p>");
             }
             
             out.println("</body>");
@@ -68,6 +68,6 @@ public class ServletProduto extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
 }

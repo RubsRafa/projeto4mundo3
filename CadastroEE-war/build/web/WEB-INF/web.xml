@@ -4,9 +4,17 @@
         <servlet-name>ServletProdutoP4</servlet-name>
         <servlet-class>cadastroee.servlets.ServletProduto</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletProdutoFC</servlet-name>
+        <servlet-class>cadastroee.servlets.ServletProdutoFC</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletProdutoP4</servlet-name>
         <url-pattern>/ServletProdutoP4</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletProdutoFC</servlet-name>
+        <url-pattern>/ServletProdutoFC</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>
