@@ -29,8 +29,10 @@ public class ServletProdutoFC extends HttpServlet {
         
         String acao = request.getParameter("acao");
         String destino = "/WEB-INF/ProdutoLista.jsp";
-
-        if (acao != null) {
+        
+        if (acao == null) {
+            acao = "listar";
+        }
             
             switch (acao) {
                 case "listar":
@@ -83,7 +85,6 @@ public class ServletProdutoFC extends HttpServlet {
                 default:
                     destino = "/WEB-INF/ProdutoLista.jsp";
                     break;
-            }
         }
         
         RequestDispatcher rd = request.getRequestDispatcher(destino);
